@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+- stable
+cache: npm
+before_install:
+- npm install codecov
+install:
+- npm install
+after_success:
+- npx codecov --file coverage/lcov.info --disable search
+script:
+- npm test:ci
+
