@@ -1,0 +1,6 @@
+src
+.travis.yml
+.prettierrc
+tslint.json
+tsconfig.*
+jest.config.js

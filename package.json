@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A package for generating a version 4 variant 1 UUID.",
   "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "engines": {
     "node": "10.14.x",
     "npm": "6.5.x"
@@ -24,6 +25,10 @@
     "random",
     "generate"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jmcdo29/JUID.git"
+  },
   "author": "Jay McDoniel <jmcdo29@gmail.com> (https://github.com/jmcdo29)",
   "license": "MIT",
   "devDependencies": {
