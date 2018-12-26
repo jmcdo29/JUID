@@ -12,5 +12,6 @@ module.exports = {
   },
   testEnvironment: 'node',
   coverageDirectory: '../coverage',
-  collectCoverage: true
+  collectCoverage: true,
+  coverageReporters: ['lcov', 'text']
 };
