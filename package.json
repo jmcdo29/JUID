@@ -1,5 +1,5 @@
 {
-  "name": "juid",
+  "name": "@jmcdo29/juid",
   "version": "1.0.0",
   "description": "A package for generating a version 4 variant 1 UUID.",
   "main": "./dist/index.js",

@@ -7,20 +7,20 @@ A quick Node package to generate a version 4 variant 1 UUID.
 
 ---
 
-To install the package run `npm install juid` or `yarn install juid`.
+To install the package run `npm install @jmcdo29/juid` or `yarn install @jmcdo29/juid`.
 
 ## Import the package
 
 into TypeScript with
 
 ```TypeScript
-import { genUUID } from 'juid';
+import { genUUID } from '@jmcdo29/juid';
 ```
 
 or into JavaScript with
 
 ```JavaScript
-const genuuid = require('juid');
+const genuuid = require('@jmcdo29/juid');
 ```
 
 ## Use the function
