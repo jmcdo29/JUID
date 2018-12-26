@@ -2,9 +2,10 @@ language: node_js
 node_js:
 - 10.14.2
 before_install:
-- npm install codecov
+- npm i -g npm@6.5.0
+- npm i codecov
 install:
-- npm install
+- npm i
 after_success:
 - npx codecov --file coverage/lcov.info --disable search
 script:
