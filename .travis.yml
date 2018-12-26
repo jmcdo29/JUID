@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-- stable
+- ^10.14.0
 before_install:
 - npm install codecov
 install:
@@ -8,7 +8,7 @@ install:
 after_success:
 - npx codecov --file coverage/lcov.info --disable search
 script:
-- npm test:ci
+- npm run test:ci
 env:
   global:
     secure: XwL0KbUSbryaoSC1ysgo/CV6h+HFoNiz9T3UYg3Ffhg5W+bvGyU7Jdlc6nVihS6UWiEMGeffcethR4S9JkxCRiGJm/EEB3GEc7AvJZhRlrXWHINFijCB7eweSTXF0YJ8Tx40BSi5W8jOsSjmWl+O9pO8Q+RTmAsgODmH7rSOvfEzRpBmrYUTIEKBYjO67/rCWo949grllKRfJQTkDjE+TIeUx6v3Ow01zUi7E/hsLeHcS0U6ofkrsG1g4abB7fF6XbKseuwYBNzqXDlj/zdYGZocc6vts+axsdX7ofyo1P9nScpHYsM92/p/W8r2VFVDKURMJuCrfO8J+wQPSeSZsASNBcBAMUwlOnKOGoPk91n8nE0MvDZ6cWZTwgLlOZsen+KVqieYa2cLmbWqbdtJZkoj29X55+bBu8J+bV3dJcouXBsuZ5WWfaXz6ji4YU2MsNFQdz6XFNRIeQi4yF6W1UJ8MgiTv9oJgevXO72kHh19F2Dwg05xvgjtIDR0a+eFbcJ/moY1ZjBMepVKapdXG8M4YDJTU1Mela3rpA0GpQWZC2HZIsNXBrQ8Y1scDRdyyEezPEApWd11psFuqQcsDIz/6HXhFzFoN/70HSNVkq+Zy0PvT3ZQqsb7cG5J8f/91Ejd6czquT8PlnXB/0eaPUiUATUb4rsvuI3e+6L60eM=
