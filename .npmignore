@@ -4,3 +4,7 @@ src
 tslint.json
 tsconfig.*
 jest.config.js
+coverage
+.vscode
+scripts
+*.txt
