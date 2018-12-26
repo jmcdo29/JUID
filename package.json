@@ -1,0 +1,49 @@
+{
+  "name": "juid",
+  "version": "1.0.0",
+  "description": "A package for generating a version 4 variant 1 UUID.",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "engines": {
+    "node": "10.14.x",
+    "npm": "6.5.x"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint && npm run format && node ./scripts/gitAddMod"
+    }
+  },
+  "scripts": {
+    "build": "rimraf dist && tsc",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "npm run lint:src && npm run lint:test",
+    "lint:src": "tslint -p tsconfig.json -c tslint.json",
+    "lint:test": "tslint -p tsconfig.spec.json -c tslint.json",
+    "test": "jest",
+    "test:ci": "jest --ci"
+  },
+  "keywords": [
+    "uuid",
+    "random",
+    "generate"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jmcdo29/JUID.git"
+  },
+  "author": "Jay McDoniel <jmcdo29@gmail.com> (https://github.com/jmcdo29)",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^23.3.10",
+    "@types/node": "^10.12.18",
+    "husky": "^1.2.1",
+    "jest": "^23.6.0",
+    "prettier": "^1.15.3",
+    "rimraf": "^2.6.2",
+    "ts-jest": "^23.10.5",
+    "tslint": "^5.12.0",
+    "tslint-config-prettier": "^1.17.0",
+    "tslint-sonarts": "^1.8.0",
+    "typescript": "^3.2.2"
+  }
+}
