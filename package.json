@@ -34,7 +34,7 @@
   "author": "Jay McDoniel <jmcdo29@gmail.com> (https://github.com/jmcdo29)",
   "license": "MIT",
   "devDependencies": {
-    "@types/jest": "^24.0.0",
+    "@types/jest": "^26.0.3",
     "@types/node": "^10.12.18",
     "husky": "^1.2.1",
     "jest": "^23.6.0",
